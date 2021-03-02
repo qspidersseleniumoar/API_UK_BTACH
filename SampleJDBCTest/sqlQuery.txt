@@ -1,0 +1,22 @@
+
+create database dbName      eg :  create database students;
+use database dbName            eg :     use students;
+show databases;
+
+create table students_info
+(
+regno Int(10) not null,
+firstname varchar(50),
+middlename varchar(50),
+lastname varchar(50),
+Primary key(regno)
+);
+
+insert into students_info (regno, firstname, middlename, lastname) values('1', 'ram','gowda', 'h');
+
+insert into students_info (regno, firstName, middleName, lastName) values('2', 'sam','linga', 'h');
+
+insert into students_info (regno, firstName, middleName, lastName) values('3', 'bam','bramin', 'h');
+
+
+select * from students_info;
